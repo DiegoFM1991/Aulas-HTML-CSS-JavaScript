@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino FlexBox</title>
+    <style>
+     
+        * { /*Asterisco serve para selecionar TUDO, ou seja, vou usar em todo o documento*/
+            margin: 0px; /*Para eliminar qualquer margem padrão de elementos*/
+        }
+
+        .container { /*Ponto para aplicar CSS em class; # para aplicar CSS em id; nome da tag para formatar a tag inteira*/
+            background-color: #f9eac3;
+            padding: 16px; /*É uma margem interna, ou seja, o recuo do conteúdo dentro da caixa*/
+            height: 500px;
+            display: flex; /*coloca as DIVs lado a lado dentro da MAIN*/ /*Por padrão, a orientação é em linha*/
+            flex-direction: row; /*Porque as vezes precisa de coluna, as vezes precisa de linha*/
+            justify-content: center; /*Pega todos os DIVs e deixa centralizado no container*/
+            align-items: center; /*Coloca o próprio DIV, na vertical, no meio do container*/ /*Se quiser embaixo é o "flex-end", ao invés de "center"*/
+            flex-wrap: wrap; /*Os DIVs não mudam mais o espaço quando eu mexo na janela, e sim vai jogando para a linha de baixo*/
+            align-content: center; /*Tudo o que cai nas linhas ficam centralizadas na tela*/
+            row-gap: 16px; /*Toda vez que quebrar o Layout, ele joga pra baixo e dá um espaço de ... pixels*/
+            column-gap: 16px; /*Toda vez que quebrar o Layout, ele joga pra baixo e tbm dá espaço de lado de ... pixels*/
+            
+        }
+     
+        .caixa-1 {
+            background-color: #d8bfd8;
+            height: 150px;
+            width: 150px;
+            text-align: center; /*Centraliza o conteúda na horizontal, em relação ao tamanho do container, e não do tamanho da tela*/
+            font-size: 40px;
+            border-radius: 16px; /*Arredondamento dos cantos da borda*/
+        }
+        
+        .caixa-2 {
+            background-color: #ff9999;
+            height: 150px;
+            width: 150px;
+            text-align: center; /*Centraliza o conteúda na horizontal, em relação ao tamanho do container, e não do tamanho da tela*/
+            font-size: 40px;
+            border-radius: 16px; /*Arredondamento dos cantos da borda*/
+        }
+        
+        .caixa-3 {
+            background-color: #7aec09;
+            height: 150px;
+            width: 150px;
+            text-align: center; /*Centraliza o conteúda na horizontal, em relação ao tamanho do container, e não do tamanho da tela*/
+            font-size: 40px;
+            border-radius: 16px; /*Arredondamento dos cantos da borda*/
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="caixa-1">1</div>
+        <div class="caixa-2">2</div>
+        <div class="caixa-3">3</div>
+        <div class="caixa-1">4</div>
+        <div class="caixa-2">5</div>
+        <div class="caixa-3">6</div>
+        <div class="caixa-1">7</div>
+        <div class="caixa-2">8</div>
+        <div class="caixa-3">9</div>
+        <div class="caixa-1">10</div>
+        <div class="caixa-2">11</div>
+        <div class="caixa-3">12</div>
+    </main>
+</body>
+
+</html>
