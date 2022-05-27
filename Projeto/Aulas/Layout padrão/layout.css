@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid #8C0700;
+    background-color: #C20A00;
+    height: 100px;
+    align-items: center;
+}
+
+#pesquisa {
+    border: 2px solid #421A18;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px; /* Espaçamento entre o início do formulário e o campo de digitação. */
+}
+
+#bt_pesquisar {
+    background-color: #C24C46;
+    border: 2px solid #421A18;
+    height: 35px; /* Para ficar no mesmo tamanho do formulário tive que usar 5px a mais de altura */
+    border-radius: 5px;
+    padding-left: 5px; /* Espaçamento entre o início do formulário e o campo de digitação. */
+    cursor: pointer; /* Para virar 'mãozinha' do windows. */
+    color: white;
+}
+
+#bt_pesquisar:hover { /* Quando passa o mouse por cima, ele muda a cor. */
+    background-color: #F55B52;
+    border: 2px solid #421A18;
+}
