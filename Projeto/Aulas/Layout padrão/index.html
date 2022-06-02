@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo layout padrão</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,1,200"/>
     <link href="layout.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <header>
         <div>
-            <img src="imagens/cocacolaLogo.jpg" height="90px" title="Coca-Cola">
+            <img src="imagens/cocacolaLogo.jpg" height="90px" title="Coca-Cola"> <!-- Para ir para frente é nome_da_pasta/nome_do_arquivo -- se for para voltar é ../nome_da_pasta -->
         </div>
         
         <div>
             <form action=""> <!-- Para enviar as informações do front-end para o back-end. Será a ação que o formulário vai fazer -->
                 <input id="pesquisa" type="text" placeholder="Digite aqui...">
                 <input id="bt_pesquisar" type="button" value="Pesquisar">
-            </form>           
+            </form>
+                                
         </div>
         
         <div>
-            Configurações
+            <span class="material-symbols-outlined">
+                settings
+                </span>
         </div>
     </header>
 </body>
