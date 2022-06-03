@@ -40,9 +40,34 @@ main{
     border: 1px solid blue;
 }
 .fotos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 500px;
     border: 1px solid black;
+}
+.img{
+
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.conteudo{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 250px;
+    
+    font-weight: bold;
+    text-align: center;
+    margin-top: 85px;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 100px;
+    font-size: 85px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
 }
