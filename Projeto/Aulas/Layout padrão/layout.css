@@ -33,3 +33,16 @@ header{
     background-color: #F55B52;
     border: 2px solid #421A18;
 }
+
+main{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 1px solid blue;
+}
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border: 1px solid black;
+}
