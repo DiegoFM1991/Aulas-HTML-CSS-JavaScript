@@ -1,3 +1,5 @@
+/* INÍCIO CSS DO CABEÇALHO */
+
 body {
     margin: 0;
     padding: 0;
@@ -52,4 +54,77 @@ header #header-contato li:first-child { /* só aplica no primeiro 'li' do header
     margin: 0;
     padding: 0;
     border: none;
+}
+
+#topo, #topo a {
+    color: #C0BAB6;
+    background-color: #333333;
+    text-decoration: none; /* tira o risquinho que fica embaixo de todo link - hiperlink */
+}
+
+span.material-icons { /* Alinha o icone ao texto (e-mail e telefone) */
+    vertical-align: middle;
+}
+
+/* FIM DO CSS DO CABEÇALHO */
+
+/* INÍCIO DO CSS DO MENU */
+
+a {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+nav {
+    width: 980px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none; /* Elimina as bolinhas da lista */
+    text-transform: uppercase; /* Transforma em caixa alta */
+    font-size: 12px;
+}
+
+nav li {
+    /* float: left; /* Flutuar à esquerda, até preencher a tela */
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+nav li a {
+    display: block;
+    padding: 20px 0; /* Aqui ele entende que quero 20px de padding em cima e embaixo e 0px nos lados */
+    font-weight: bold;
+}
+
+nav.home li.link_home a, nav a:hover { /* Neste caso o link que está a página sempre vai ficar na cor diferente */
+    color: #919191;
+}
+
+/* FIM DO CSS DO MENU */
+
+/* INÍCIO DO CSS DO MAIN */
+
+main {
+    width: 980px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 40px;
+}
+
+.sectionMain {
+
 }
