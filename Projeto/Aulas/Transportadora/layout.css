@@ -200,16 +200,20 @@ a.botao { /* Todas os botões que existem nas classes 'a' */
 #sectionCliente {
     background-color: #FFFFFF;
     width: 100%;
-    height: 320px;
+    height: 350px;
 }
 
 #sectionCliente {
-    text-align: center;
+    text-align: justify;
     padding-top: 10px;
 }
 
+#sectionCliente h1 { /* Formata apenas o h1 dentro do sectionCliente */
+    text-align: center;
+}
+
 #conteudoCliente {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100px;
     width: 750px;
     margin-left: auto;
@@ -222,9 +226,76 @@ a.botao { /* Todas os botões que existem nas classes 'a' */
     border: 4px solid #919191;
     margin: 10px;
     border-radius: 10px;
-
 }
 
 #conteudoCliente img {
     border-radius: 75px;
+}
+
+#conteudoCliente .text-cliente {
+    text-align: justify;
+    padding-top: 10px;
+    display: block;
+}
+
+#containnerRodape {
+    height: 350px;
+    width: 100%; /* Por padrão já seria 100% */
+}
+
+#rodape {
+    border: 1px solid red; /* Para ver o div grande, que engloba todo o footer */
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#rodape_comentarios, #rodape_nav, #caixa_formulario { /* Assim formata as duas na mesma tocada */
+    border: 1px solid red;
+    width: 304px;
+    height: 285px;
+    float: left;
+    margin: 10px;
+}
+
+.rodape_title {
+    text-align: center;
+}
+
+#rodape_nav li a {
+    border: 1px solid green;
+    height: 25px;
+}
+
+#rodape_comentarios li {
+    border: 1px solid green;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#caixa_formulario label {
+    display: block; /* Cada um em uma linha, pois transformar os labels em caixas */
+    margin-top: 10px;
+}
+
+#caixa_formulario input {
+    height: 25px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000
+}
+
+#caixa_formulario textarea {
+    border-radius: 5px;
+    height: 85px;
+    padding-left: 5px;
+    resize: none;
+    width: 285px;
+}
+
+#caixa_formulario input, #caixa_formulario textarea {
+    color: #FFFFFF;
+    background-color: #333333;
+    border: 1px solid #666666;
 }
