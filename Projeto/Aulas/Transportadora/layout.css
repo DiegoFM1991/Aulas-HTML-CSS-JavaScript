@@ -244,7 +244,7 @@ a.botao { /* Todas os botões que existem nas classes 'a' */
 }
 
 #rodape {
-    border: 1px solid red; /* Para ver o div grande, que engloba todo o footer */
+    /* border: 1px solid red; Para ver o div grande, que engloba todo o footer */
     width: 980px;
     margin-left: auto;
     margin-right: auto;
@@ -252,7 +252,7 @@ a.botao { /* Todas os botões que existem nas classes 'a' */
 }
 
 #rodape_comentarios, #rodape_nav, #caixa_formulario { /* Assim formata as duas na mesma tocada */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 304px;
     height: 285px;
     float: left;
@@ -264,12 +264,12 @@ a.botao { /* Todas os botões que existem nas classes 'a' */
 }
 
 #rodape_nav li a {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 25px;
 }
 
 #rodape_comentarios li {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     list-style: none;
     margin-bottom: 15px;
 }
@@ -298,4 +298,29 @@ a.botao { /* Todas os botões que existem nas classes 'a' */
     color: #FFFFFF;
     background-color: #333333;
     border: 1px solid #666666;
+}
+
+#botoes {
+    display: flex;
+    margin-top: 10px;
+}
+
+#caixa_formulario input[type=submit], #caixa_formulario input[type=reset] { /*dentro da caixa formulario, só vai editar a submit/enviar */ /*Antes da chave não pode ter espaço */
+    background-color: #FF9900;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #232323;
+}
+
+#caixa_formulario input[type=submit]{
+    margin-left: 0px;
+}
+
+#rodape_nav li {
+    display: flex;
+    margin: 5px 0px;
+}
+
+#rodape_nav li a{ /* Para tirar o espaço entre os links na div navegação */
+    padding: 0px;
 }
