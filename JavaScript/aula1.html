@@ -6,55 +6,76 @@
         <title>JavaScript</title>
         <script>
             
-            console.log("Hello, World!"); //Primeiro programa em JS!
 
-            1 == "1"; //Em JS isso é verdadeiro.
-            1 === "1"; //Em JS isso é falso.
-            
-            //const é uma constante.
-            //let permite a alteração do valor da variável.
-            //quando não colocar const ou let, e sim a variável direto, ela é uma variável global
-            
-            const nome = "Sidney";
-            let idade = 22;
-            console.log("Olá " + nome + "! Sua idade é " + idade + " anos.");
+            // // // // // // // // // // // // // ***** AULA 01 ***** // // // // // // // // // // // // //
 
-            console.log(idade + 1); //Se o 1 estivesse entre aspas, o JS iria concatenar e devolver '221', como não tem aspas, ele operacionaliza a soma, devolvendo 23.
 
-            //Laços de repetição e if:
-            //Exemplo de uma tabuada de 3
+            // console.log("Hello, World!"); //Primeiro programa em JS!
+
+            // 1 == "1"; //Em JS isso é verdadeiro.
+            // 1 === "1"; //Em JS isso é falso.
             
-            let tabuada = prompt("Digite um número: "); //Scanner do JS.
+            // //const é uma constante.
+            // //let permite a alteração do valor da variável.
+            // //quando não colocar const ou let, e sim a variável direto, ela é uma variável global
             
-            if (tabuada > 0 && tabuada < 10) {
-                console.log("*******************");
-                console.log("Tabuada de " + tabuada + "!");
-                for (let i = 0; i <= 10; i++) {
-                    console.log(tabuada + " x " + i + " = " + (tabuada * i));
-                }
-            } else {
-                alert("Número inválido. Você deveria ter escolhido um número entre 01 e 10! \nRecarregue a página para reiniciar."); //Devolve um alerta de erro ao usuário.
-            }
+            // const nome = "Sidney";
+            // let idade = 22;
+            // console.log("Olá " + nome + "! Sua idade é " + idade + " anos.");
+
+            // console.log(idade + 1); //Se o 1 estivesse entre aspas, o JS iria concatenar e devolver '221', como não tem aspas, ele operacionaliza a soma, devolvendo 23.
+
+            // //Laços de repetição e if:
+            // //Exemplo de uma tabuada de 3
             
-            //Desafio aula01:
-            //Modificar a atividade acima para fazer a tabuada do primeiro número até o segundo número.
-            let tabuada1 = prompt("Digite o primeiro número entre 01 e 10: ");
-            let tabuada2 = prompt("Digite o segundo número entre 01 e 10: ");
+            // let tabuada = prompt("Digite um número: "); //Scanner do JS.
             
-            while (tabuada1 < tabuada2) {
-                if (tabuada1 > 0 && tabuada1 < 10) {
-                    if (tabuada2 > 0 && tabuada2 < 10) {
-                        console.log("*******************");
-                        console.log("Tabuada de " + tabuada1 + "!");
-                        for (tabuada1; tabuada1 <= tabuada2; tabuada1++) {
-                            for (i = 1; i <= 10; i++)
-                                console.log(tabuada1 + " x " + i + " = " + (tabuada1 * i));
-                        }
+            // if (tabuada > 0 && tabuada < 10) {
+            //     console.log("*******************");
+            //     console.log("Tabuada de " + tabuada + "!");
+            //     for (let i = 0; i <= 10; i++) {
+            //         console.log(tabuada + " x " + i + " = " + (tabuada * i));
+            //     }
+            // } else {
+            //     alert("Número inválido. Você deveria ter escolhido um número entre 01 e 10! \nRecarregue a página para reiniciar."); //Devolve um alerta de erro ao usuário.
+            // }
+            
+            // //Desafio aula01:
+            // //Modificar a atividade acima para fazer a tabuada do primeiro número até o segundo número.
+            // let tabuada1 = prompt("Digite o primeiro número entre 01 e 10: ");
+            // let tabuada2 = prompt("Digite o segundo número entre 01 e 10: ");
+            
+            // while (tabuada1 < tabuada2) {
+            //     if (tabuada1 > 0 && tabuada1 < 10) {
+            //         if (tabuada2 > 0 && tabuada2 < 10) {
+            //             console.log("*******************");
+            //             console.log("Tabuada de " + tabuada1 + "!");
+            //             for (tabuada1; tabuada1 <= tabuada2; tabuada1++) {
+            //                 for (i = 1; i <= 10; i++)
+            //                     console.log(tabuada1 + " x " + i + " = " + (tabuada1 * i));
+            //             }
+            //         }
+            //     } else {
+            //         alert("Número inválido. Você deveria ter escolhido um número entre 01 e 10! \nRecarregue a página para reiniciar."); //Devolve um alerta de erro ao usuário.
+            //     }
+            // }
+
+
+
+            // // // // // // // // // // // // // ***** AULA 02 ***** // // // // // // // // // // // // //
+
+
+
+            let tabuada = prompt("Digite os valores separados por (;)");
+            tabuada = tabuada.split(";"); // Função do JS para separar as Strings e criar um Array com todas as 'char' da String separadas pelo ';'.
+
+            tabuada.forEach(element => { // Como tabuada agora é um Array, ele pega cada elemento do Array e faz a tabuada.
+                if (element > 0 && element <= 10){
+                    for (let i = 1; i <= 10; i++) {
+                        console.log(element + " x " + i + " = " + element * i)
                     }
-                } else {
-                    alert("Número inválido. Você deveria ter escolhido um número entre 01 e 10! \nRecarregue a página para reiniciar."); //Devolve um alerta de erro ao usuário.
                 }
-            }
+            });
 
         </script>
     </head>
