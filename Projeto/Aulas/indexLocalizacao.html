@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 500px 635px;
+        }
+        #form, #maps {
+            margin: 1px solid #ccc;
+            padding: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+
+        }
+        label span {
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            height: 30%;
+            padding: 5px;
+        }
+        input[type=radio], input[type=checkbox], input[type=submit], input[type=reset] {
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="form">
+            <form action="" method="POST">
+                <h1>Dados pessoais</h1>
+                <label>
+                    <span>Nome:</span>
+                    <input type="text" id="nome" name="nome" maxlength="20">
+                </label>
+                <label>
+                    <span>E-mail:</span>
+                    <input type="text" id="e-mail" name="e-mail">
+                </label>
+                <label>
+                    <span>Sexo:</span>
+                    <input type="radio" class="sexo" name="sexo" value="masculino">Masculino
+                    <input type="radio" class="sexo" name="sexo" value="feminino">Feminino
+                </label>
+                <label>
+                    <span>Esporte</span>
+                    <input type="checkbox" class="esporte" name="esporte" value="futebol">Futebol
+                    <input type="checkbox" class="esporte" name="esporte" value="volei">Volei
+                    <input type="checkbox" class="esporte" name="esporte" value="natação">Natação
+                </label>
+                <label>
+                    <span>Mês de nascimento</span>
+                    <select name="mesNasimento">
+                        <option value="0">Selecione o mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </label>
+
+                <h1>Endereço</h1>
+                    <label>
+                        <span>CEP</span>
+                        <input type="text" id="cep" name="cep" maxlength="8">
+                    </label>
+                    <label>
+                        <span>Logradouro</span>
+                        <input type="text" id="logradouro" name="logradouro">
+                    </label>
+                    <label>
+                        <span>Bairro</span>
+                        <input type="text" id="bairro" name="bairro" maxlength="20">
+                    </label>
+                    <label>
+                        <span>Cidade</span>
+                        <input type="text" id="cidade" name="cidade" maxlength="20">
+                    </label>
+                    <label>
+                        <span>Estado</span>
+                        <input type="text" id="estadp" name="estado" maxlength="20">
+                    </label>
+
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Limpar">
+
+            </form>   
+        </div>
+        <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.711038231172!2d-48.54877780389431!3d-27.602486975937527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273831a4c1b6c9%3A0x75022e2e2e695070!2sSesc%20Prainha!5e0!3m2!1spt-BR!2sbr!4v1659650328987!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+</body>
+</html>
