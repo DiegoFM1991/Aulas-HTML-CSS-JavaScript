@@ -64,3 +64,33 @@ footer {
 #menu-ativo .itens-menu-ativo:hover{
     background-color: #555555;
 }
+
+#janela {
+    display: block;
+    width: 800px;
+    height: 580px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#janela #janela-titulo {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    height: 30px;
+    border-bottom: 1px solid #555555;
+}
+
+#botoes-controle #fechar {
+    cursor: pointer;
+}
+
+#botoes-controle #fechar:hover {
+    font-weight: bold;
+}
+
+#janela input {
+    color: black;
+}
