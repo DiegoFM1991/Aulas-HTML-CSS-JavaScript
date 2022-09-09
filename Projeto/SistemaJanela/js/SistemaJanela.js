@@ -1,5 +1,5 @@
 function start() {
-    menu = "#menu-ativo";
+    let menu = "#menu-ativo";
         if ($(menu).is(":visible")){
             esconderElemento($(menu));
         } else {
@@ -34,6 +34,13 @@ function abrirJanela(ele) {
         $("#janela").find("#title").text("Exemplo AJAX");
         const form = '<label>CEP</label>' + '<input type="text" id="cep">' + '<button id="enviar_cep">Enviar</button>';
         $(form).appendTo("#janela-conteudo");
+    }
+    if ($(ele).hasClass("ibge")) {
+        $("#janela").find("#title").text("Exemplo IBGE");
+        const select = '<label>Selecione um estado: </label>' +
+                       '<select id="estado">IBGE</select>';
+        $(select).appendTo("#janela-conteudo");
+        getEstado();
     }
     $("#janela").show();
 }

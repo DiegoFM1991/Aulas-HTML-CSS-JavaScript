@@ -91,6 +91,6 @@ footer {
     font-weight: bold;
 }
 
-#janela input {
+#janela, option, input {
     color: black;
 }
