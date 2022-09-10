@@ -1,5 +1,7 @@
+
+const menu = "#menu-ativo";
+
 function start() {
-    let menu = "#menu-ativo";
         if ($(menu).is(":visible")){
             esconderElemento($(menu));
         } else {
@@ -20,9 +22,15 @@ function fechar() {
 }
 
 function abrirJanela(ele) {
-    console.log($(ele))
+
+    esconderElemento($(menu));
+       
+    $("janela-conteudo").find(".dados:not(.template)").remove(); // Remove dados sem template.
+    let dados = $("#janela-conteudo").find(".dados.template").clone().removeClass("template"); // Faz o clone.
+    
     if ($(ele).hasClass("tabuada")) {
-        $("#janela").find("#janela-conteudo").text("Tabuada");
+        $("#janela").find("#title").text("Tabuada");
+        $(dados).text("Tabuada");
     }
     if ($(ele).hasClass("imc")) {
         $("#janela").find("#janela-conteudo").text("IMC");
@@ -33,14 +41,17 @@ function abrirJanela(ele) {
     if ($(ele).hasClass("ajax")) {
         $("#janela").find("#title").text("Exemplo AJAX");
         const form = '<label>CEP</label>' + '<input type="text" id="cep">' + '<button id="enviar_cep">Enviar</button>';
-        $(form).appendTo("#janela-conteudo");
+        $(form).appendTo($(dados));
     }
     if ($(ele).hasClass("ibge")) {
         $("#janela").find("#title").text("Exemplo IBGE");
         const select = '<label>Selecione um estado: </label>' +
-                       '<select id="estado">IBGE</select>';
-        $(select).appendTo("#janela-conteudo");
+                       '<select id="estado" onchange="getActionEstado()"></select>';
+        $(select).appendTo($(dados));
         getEstado();
     }
+
+    $(dados).appendTo("#janela-conteudo");
     $("#janela").show();
+
 }

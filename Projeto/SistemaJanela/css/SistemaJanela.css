@@ -6,6 +6,8 @@
 
 body {
     background: #fff url(../img/plano-de-fundo.jpg) no-repeat right top fixed;
+    height: auto;
+    width: auto;
 }
 
 footer {
@@ -91,6 +93,6 @@ footer {
     font-weight: bold;
 }
 
-#janela, option, input {
+#janela, option, input, #estado, #cidade {
     color: black;
 }
